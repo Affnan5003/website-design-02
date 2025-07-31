@@ -1,0 +1,97 @@
+
+/* General adjustments */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    margin: 10px;
+}
+
+/* Fix typo class flex-warp */
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+
+/* Navbar */
+.navbar-nav {
+    gap: 1rem;
+}
+
+/* Section spacing */
+.section-1, .section-2, .section-3, .section-4 {
+    padding: 30px 15px;
+}
+
+/* Platform cards spacing */
+.desktop {
+    margin: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .purchase .cards .card {
+        width: 100%;
+    }
+
+    .team .card {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .desktop .d-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container, .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .numbers {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .col-md-6, .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .carousel .card {
+        width: 90%;
+        margin: auto;
+    }
+}
